@@ -24,6 +24,8 @@ RUN wget http://github.com/roboll/helmfile/releases/download/v0.40.1/helmfile_li
     mv helmfile_linux_amd64 /usr/local/bin/helmfile && \
     chmod u+x /usr/local/bin/helmfile
 
+RUN apk add --update -t openssl
+
 COPY bootstrap/ /bootstrap/
 COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
