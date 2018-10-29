@@ -1,0 +1,15 @@
+persistence:
+  enabled: true
+  storageClass: managed-nfs-storage
+
+env:
+  open: 
+    DISABLE_API: false
+
+resources:
+  requests:
+    memory: 128Mi
+    cpu: 0.1
+  limits:
+    memory: 512Mi
+    cpu: 0.2
