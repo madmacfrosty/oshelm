@@ -5,6 +5,7 @@ persistence:
 env:
   open: 
     DISABLE_API: false
+    ALLOW_OVERWRITE: true
 
 resources:
   requests:
