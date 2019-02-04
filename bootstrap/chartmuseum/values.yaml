@@ -2,6 +2,8 @@ persistence:
   enabled: true
   storageClass: managed-nfs-storage
 
+securityContext:
+  
 env:
   open: 
     DISABLE_API: false
